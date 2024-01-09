@@ -1,0 +1,32 @@
+.pixelCon {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: -4;
+    /* display: none; */
+  }
+  
+  .pixel {
+    background: #545252;
+    width: 8px;
+    height: 4px;
+    padding-top: 4px;
+    float: left;
+    opacity: 0.0;
+    animation: blink 4s infinite;
+    border-radius: 232px;
+    box-shadow: 0 0 2px rgba(172, 172, 172, 0.5), 
+    0 0 3px rgba(172, 172, 172, 0.5), 
+    0 0 4px rgba(172, 172, 172, 0.5);
+  }
+  
+  @keyframes blink {
+    0%    {opacity: 0.0;}
+    25%   {opacity: 0.0;}
+    50%   {opacity: 0.5;}
+    100%  {opacity: 0.0;}
+  }

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+.hiddenSection {
+    display: none !important;
+}
+
+body {
+    background-color: #8d8787 !important;
+    font-size: 15px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.container-border {
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    position: fixed;
+    border: #737171;
+    border-style: solid;
+    border-width: medium;
+}
+
+.container {
+    top: 30px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    position: fixed;
+}
+
+.color-set-1 {
+    color: #e9e4e4 !important;
+}
+
+.color-set-2 {
+    color: #646060 !important;
+    background-color: #d2d5d7 !important
+    ;}
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav a {
+    color: #464343 !important;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2.55px;
+    font-size: 15px !important;
+    line-height: 3;
+}
+
+.left-pane-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 55px;
+    height: 100%;
+    transform: translateY(-16%);
+}
+
+.right-pane-container {
+    width: 67%;
+    height: 100%;
+    color: #e9e4e4 !important;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-left: 286px;
+    margin-right: -17px;
+    flex-grow: 1;
+    overflow-y: scroll;
+}
+
+h3, h2,h4,h5,h1 {
+    margin-bottom: 0px;
+}
+
+
+.right-pane-container ul {
+    margin-top: 0px;
+}
+
+h3 {
+    letter-spacing: 0.2em;
+}
+
+p {
+    white-space: pre-line;
+}

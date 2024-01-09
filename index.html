@@ -2,28 +2,160 @@
 
 <html lang=”en”>
 
-  <head>
+<head>
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/scrollBar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/pixelAnimation.css">
+  <script src="js/myScript.js"></script>
 
-    <meta charset=”UTF-8″>
+  <meta charset=”UTF-8″>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+  <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+  <title>My Website [Name of the website]</title>
+</head>
 
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+<body>
 
-    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+  <div class="container-border">
+    <div class="container">
 
-    <title>My Website [Name of the website]</title>
+    <div class="left-pane-container">
+      
+      <div class="logo-container">
+        <div class="logo-text">
+          <p class="logo-name">Marc Weiss</p>
+          <p class="logo-prof">web developer</p>
+          <p class="logo-details">marcwe@gmail.com</p>
+          <p class="logo-details">+972545825175</p>
+        </div>
+        <div class="logo-background">
+          <div class="pixelCon"></div>
+        </div>
+      </div>
 
-  </head>
+      <div class="nav color-set-1">
+        <a href="#about" class="nav-button"><p>ABOUT ME</p></a>
+        <a href="#noabout1" class="nav-button"><p>WEWEHAPPY</p></a>
+        <a href="#noabout2" class="nav-button"><p>OVERVIEW</p></a>
+      </div>
 
-  <body>
+    </div>
 
-    <main>
+    <div class="right-pane-container scrolable">
+      <div class="right-pane ">
+        <div id="about" class="">
+          <div class="about-section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm <strong>Marc Weiss</strong>, a multifaceted professional with a robust background in <strong>3D visualization</strong> and a growing passion for <strong>software development</strong>. With over two decades in 3D visualization at prestigious studios like Ando Studio and Viewpoint, I've honed my skills in architectural visualization, scripting, and debugging in dynamic environments.
+            </p>
+            <p>
+                My journey in software development is marked by an enthusiastic leap from art to technology. As a <strong>Tier 4 Engineer</strong> at Intuit and a graduate of the Java & J2EE Programming Course at John Bryce, I've embraced the challenges of debugging, customer support, and continuous learning. My technical proficiency is complemented by strong analytical skills and a customer-focused approach, ensuring that I deliver solutions that enhance user satisfaction.
+            </p>
+            <p>
+                I'm not just about work; I'm a self-driven, autodidact individual who thrives in dynamic environments and loves to collaborate. When I'm not delving into technological challenges, you might find me exploring new horizons in software development or investing time in personal growth and family.
+            </p>
+            <p>
+                I believe in the power of persistence and a can-do attitude. Whether it's an independent Maxscript and Python project or spearheading the visualization department, I bring the same dedication and creativity to every endeavor. As I pivot towards software development, I'm excited to blend my artistic vision with coding expertise to contribute uniquely to future projects.
+            </p>
+            <p>
+                Let's connect and explore how we can create something amazing together!
+            </p>
+            <p>Contact me at <a href="mailto:marcwe@gmail.com">marcwe@gmail.com</a> or connect with me on <a href="your-linkedin-profile-link">LinkedIn</a>.</p>
+        </div>
+        
+        </div>
+        <div id="noabout1" class="hiddenSection">
+          <h2>Project Overview</h2>
+          <p>KosherChat is a robust, secure chat application.
+          The project was an opportunity for me to tackle the challenge of developing a software application from the initial idea to the final deployment.
+          It involved multiple technologies, fullstack and cloud server, to create a seamless product that meets the requirements through research and customization.</p>
+  
+          <div class="section">
+              <h4>1. Full-Stack Development</h4>
+              <ul>
+                  <li>Backend developed using Java and Spring Boot.</li>
+                  <li>Frontend created with React, incorporating Redux for state management.</li>
+              </ul>
+          </div>
+  
+          <div class="section">
+              <h4>2. Security and Server Management</h4>
+              <ul>
+                  <li>HTTPS implementation using Let's Encrypt on an Ubuntu server.</li>
+                  <li>Applied security measures for data protection and privacy.</li>
+              </ul>
+          </div>
+  
+          <div class="section">
+              <h4>3. Deployment and Maintenance</h4>
+              <ul>
+                <li>Deployed a compute instance on Oracle Cloud.</li>
+                <li>Configured linux with both web and Java server functionalities using Apache HTTP and Apache Tomcat.</li>
+                <li>Implemented firewall settings and essential software installations, contributing to the server's stable performance and system reliability.</li>
+              </ul>
+          </div>
+  
+          <div class="section">
+              <h4>4. Technology Integration</h4>
+              <ul>
+                  <li>Utilized a combination of established and emerging technologies.</li>
+                  <li>Adapted to diverse project requirements and technological changes.</li>
+              </ul>
+          </div>
+  
+          <p>The project provided a valuable opportunity to broaden my knowledge and experience. I particularly enjoyed and found it rewarding to engage with full-stack development and server management in the cloud environment.</p>
+   
+  
+        </div>
+        <div id="noabout2" class="hiddenSection">
+          <h2>Architecture and Technologies</h2>
 
-        <h1>Welcome to My Website [Name of the website]</h1>  
+          <div class="section">
+              <p>The project involved a variety of tools and methodologies, encompassing backend development, frontend design, real-time communication, and secure server management within cloud technologies.</p>
+            </div>
+      
+          <div class="section">
+              <h3>Backend Development</h3>
+              <ul>
+                <li><strong>Developed using Java with Spring Boot,</strong> focusing on clean code practices and efficient resource management.</li>
+                <li><strong>Integrated Spring Security and JWT</strong> for robust authentication and stateless authorization.</li>
+                <li><strong>Implemented OAuth2</strong> for enhanced authentication, aligning with modern security standards.</li>
+                <li><strong>Employed WebSocket protocol, with STOMP over SockJS</strong> for efficient and structured real-time bidirectional communication.</li>
+                <li><strong>Managed database interactions via Spring Data JPA</strong> for flexible data persistence.</li>
+              </ul>
 
-        <p>This is my new website hosted on GitHub Pages!</p>
+              <h3>Server and Security</h3>
+              <ul>
+                <li><strong>Configured an Ubuntu 20 server within Oracle Cloud</strong> for its stability and community support, ensuring a robust server environment.</li>
+                <li><strong>Implemented HTTPS using Let's Encrypt</strong> for encrypted data transmission and increased trustworthiness.</li>
+                <li><strong>Implemented a comprehensive CORS policy</strong> for secure management of cross-origin requests.</li>
+                <li><strong>Set up an Apache server with reverse proxy configurations,</strong> directing traffic to the application server.</li>
+                <li><strong>Managed SSL/TLS certificates and HTTP to HTTPS redirections</strong> for secure client-server communication.</li>
+            </ul>
+            
 
-    </main>
-
-  </body>
+              <h3>Frontend Development</h3>
+              <ul>
+                <li><strong>React Architecture:</strong> Developed a dynamic UI using React. Utilized component lifecycle methods and hooks for stateful logic and effects.</li>
+                <li><strong>Redux for State Management:</strong> Managed global application state with Redux, incorporating actions and reducers for predictable state transitions.</li>
+                <li><strong>Custom Routing and Security:</strong> Implemented a custom routing and security mechanism, orchestrating component rendering and user authentication without React Router.</li>
+                <li><strong>WebSocket and STOMP Integration:</strong> Facilitated real-time bidirectional communication using WebSocket and STOMP protocol for live chat functionality.</li>
+                <li><strong>Performance Optimization:</strong> Applied React's memoization and virtual DOM diffing to optimize render cycles and minimize re-renders.</li>
+                <li><strong>Interactive UI Development:</strong> Created responsive and interactive UI components, enhancing user experience and engagement.</li>
+            </ul>
+            
+          </div>
+ 
+          <div class="section">
+              <h2>Conclusion and Future Directions</h2>
+              <p>KosherChat exemplifies a harmonious balance between functionality, security, and performance. Future enhancements include integrating more advanced messaging features, scaling through cloud technologies, and implementing machine learning for user behavior analysis and chat moderation. This project highlights my technical competencies in both frontend and backend development, underscoring my commitment to creating secure, efficient, and user-centric software solutions.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</body>
 
 </html>

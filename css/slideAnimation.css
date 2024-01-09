@@ -1,0 +1,43 @@
+
+  .marquee-section {
+    position: relative;
+    width: 230px;
+  }
+
+  .marquee-section,
+  .marquee-section * {
+    overflow: hidden;
+
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    padding-top: 118px;
+  }
+
+.marquee-div {
+    position: absolute;
+    width: 317%;
+    animation: move-left-to-right linear 60s infinite;
+}
+  
+  /* use this one to move from left to right direction */
+  @keyframes move-left-to-right {
+    from {
+      transform: translateX(-67.3%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .stop-animation {
+    animation: none;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .slow-animation {
+    animation-duration: 25s;
+  }
+
