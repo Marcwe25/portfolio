@@ -1,18 +1,24 @@
     // navigation routing
     document.addEventListener('DOMContentLoaded', function() {
+
         function toggleVisibility(event) {
             event.preventDefault();
-            const allSections = document.querySelectorAll('.right-pane > div');
-            allSections.forEach(section => {
-                console.log("add to hiddenSection ",section )
-                section.classList.add('hiddenSection');
-            });
 
-            const targetId = event.currentTarget.getAttribute('href').substring(1);
-            console.log("remove hiddenSection from  ",targetId )
+            const viewportWidth = window.innerWidth
+            if(viewportWidth>600){
+                const allSections = document.querySelectorAll('.right-pane > div');
+                allSections.forEach(section => {
+                    section.classList.add('hiddenSection');
+                });
+                console.log("target 1",event.currentTarget.getAttribute('href'))
 
-            const targetElement = document.getElementById(targetId);
-            targetElement.classList.remove('hiddenSection');
+                const targetId = event.currentTarget.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.classList.remove('hiddenSection');
+            } else {
+                console.log("target 2",event.currentTarget.getAttribute('href'))
+                location.href = event.currentTarget.getAttribute('href');
+            }
         }
 
         const links = document.querySelectorAll('.nav-button');

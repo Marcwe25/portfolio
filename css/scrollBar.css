@@ -1,7 +1,11 @@
-.scrolable{
-    overflow-y: auto;
-    overflow-x: clip;
+  .scrolable-d{
+
+    }
+
+  .scrolable-p{
+
   }
+
   /* width */
   ::-webkit-scrollbar {
     width: 7px;

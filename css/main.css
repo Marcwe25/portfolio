@@ -2,9 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
-.hiddenSection {
-    display: none !important;
-}
 
 
 body {
@@ -97,14 +94,11 @@ about-section a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    left: 55px;
-    height: 100%;
-    transform: translateY(-16%);
+    height: 100vh;
+
 }
 
 .right-pane-container {
-    width: 67%;
     height: 100%;
     color: #e9e4e4 !important;
     box-sizing: border-box;
@@ -142,3 +136,69 @@ h3 {
 .app-intro {
 
 }
+
+.iconFormating {
+    background-size: 20px 20px;
+    border: none;
+    margin: 0px;
+    background-position: center center;
+    transition: ease 0.2s all;
+    position: absolute;
+    left: 30%;
+    margin-top: 5px;
+}
+
+.menuIcon{
+    background: url("../images/app/icons/menu.svg")  no-repeat;
+}
+
+.instruction {
+    display:none;
+}
+
+@media only screen and (max-width: 600px) {
+    .right-pane-container {
+        margin-left: 0px;
+    }
+
+    .left-pane-container {
+
+    }
+
+    .scrolable-p{
+        overflow-y: auto;
+        overflow-x: clip;
+      }
+
+    .container {
+        flex-direction: column;
+        left: 13px;
+        right: 13px;
+    }
+
+    .backToTop {
+        background: url("../images/app/icons/backToTop.svg")  no-repeat;
+        margin-inline: auto;
+        margin-block: 35px;
+        width: 60px;
+        height: 60px;
+        display: block;    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .hiddenSection {
+        display: none !important;
+    }
+    
+    .left-pane-container {
+        position:fixed;
+        transform: translateY(-16%);
+        left: 55px;
+        margin-top: 65px;
+    }
+
+    .scrolable-d{
+        overflow-y: auto;
+        overflow-x: clip;
+      }
+  }
