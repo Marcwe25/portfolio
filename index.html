@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/scrollBar.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/pixelAnimation.css">
+  <link rel="stylesheet" href="css/instruction.css">
   <script src="js/myScript.js"></script>
 
   <meta charset=”UTF-8″>
@@ -35,45 +36,42 @@
       </div>
 
       <div class="nav color-set-1">
-        <a href="#about" class="nav-button"><p>ABOUT ME</p></a>
-        <a href="#noabout1" class="nav-button"><p>WEWEHAPPY</p></a>
-        <a href="#noabout2" class="nav-button"><p>OVERVIEW</p></a>
+        <a href="#aboutme" class="nav-button"><p>ABOUT ME</p></a>
+        
+        <div class="border">
+          <a href="#overview" class="nav-button app-intro"><p>OVERVIEW</p></a>
+          <a href="#Technologies" class="nav-button app-overview"><p>TECHNOLOGIES</p></a>
+        </div>
+
       </div>
 
     </div>
 
     <div class="right-pane-container scrolable">
       <div class="right-pane ">
-        <div id="about" class="">
+        <div id="aboutme" class="">
           <div class="about-section">
             <h2>About Me</h2>
-            <p>
-                Hello! I'm <strong>Marc Weiss</strong>, a multifaceted professional with a robust background in <strong>3D visualization</strong> and a growing passion for <strong>software development</strong>. With over two decades in 3D visualization at prestigious studios like Ando Studio and Viewpoint, I've honed my skills in architectural visualization, scripting, and debugging in dynamic environments.
-            </p>
-            <p>
-                My journey in software development is marked by an enthusiastic leap from art to technology. As a <strong>Tier 4 Engineer</strong> at Intuit and a graduate of the Java & J2EE Programming Course at John Bryce, I've embraced the challenges of debugging, customer support, and continuous learning. My technical proficiency is complemented by strong analytical skills and a customer-focused approach, ensuring that I deliver solutions that enhance user satisfaction.
-            </p>
-            <p>
-                I'm not just about work; I'm a self-driven, autodidact individual who thrives in dynamic environments and loves to collaborate. When I'm not delving into technological challenges, you might find me exploring new horizons in software development or investing time in personal growth and family.
-            </p>
-            <p>
-                I believe in the power of persistence and a can-do attitude. Whether it's an independent Maxscript and Python project or spearheading the visualization department, I bring the same dedication and creativity to every endeavor. As I pivot towards software development, I'm excited to blend my artistic vision with coding expertise to contribute uniquely to future projects.
-            </p>
-            <p>
-                Let's connect and explore how we can create something amazing together!
-            </p>
-            <p>Contact me at <a href="mailto:marcwe@gmail.com">marcwe@gmail.com</a> or connect with me on <a href="your-linkedin-profile-link">LinkedIn</a>.</p>
+
+         <p>Hello! I'm <strong>Marc Weiss</strong>, a software developer with a passion for detailed research and problem-solving. My approach is driven by a love for analytical and mathematical challenges.</p>
+    <p>I'm committed to self-learning and constantly seeking new technological challenges. My mindset is proactive, focusing on responsibility and embracing tasks with a can-do attitude.</p>
+    <p>In dynamic environments, I thrive on collaboration and working with diverse teams. Understanding and meeting customer needs is my priority, aiming to solve problems that enhance customer satisfaction.</p>
+    <p>I'm excited about opportunities where I can contribute my passion for technology and collaborative skills to innovative and meaningful projects.</p>
+    <p>My latest project is a chat website. For more details about this project, including an overview and a technical summary, please visit the project <a href="#overview" class="nav-button app-intro">Overview</a> and the project <a href="#Technologies" class="nav-button app-overview">Technologies</a> sections of this site.</p>
+
+        <div class="contact">
+            Feel free to reach out to me at <a href="mailto:marcwe@gmail.com">marcwe@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/">LinkedIn</a>.
         </div>
-        
         </div>
-        <div id="noabout1" class="hiddenSection">
+        </div>
+        <div id="overview" class="hiddenSection">
           <h2>Project Overview</h2>
-          <p>KosherChat is a robust, secure chat application.
+          <p>KosherChat, my last personal project, is a robust, secure chat application.
           The project was an opportunity for me to tackle the challenge of developing a software application from the initial idea to the final deployment.
           It involved multiple technologies, fullstack and cloud server, to create a seamless product that meets the requirements through research and customization.</p>
   
           <div class="section">
-              <h4>1. Full-Stack Development</h4>
+              <h4>Full-Stack Development</h4>
               <ul>
                   <li>Backend developed using Java and Spring Boot.</li>
                   <li>Frontend created with React, incorporating Redux for state management.</li>
@@ -81,7 +79,7 @@
           </div>
   
           <div class="section">
-              <h4>2. Security and Server Management</h4>
+              <h4>Security and Server Management</h4>
               <ul>
                   <li>HTTPS implementation using Let's Encrypt on an Ubuntu server.</li>
                   <li>Applied security measures for data protection and privacy.</li>
@@ -89,7 +87,7 @@
           </div>
   
           <div class="section">
-              <h4>3. Deployment and Maintenance</h4>
+              <h4>Deployment and Maintenance</h4>
               <ul>
                 <li>Deployed a compute instance on Oracle Cloud.</li>
                 <li>Configured linux with both web and Java server functionalities using Apache HTTP and Apache Tomcat.</li>
@@ -98,7 +96,7 @@
           </div>
   
           <div class="section">
-              <h4>4. Technology Integration</h4>
+              <h4>Technology Integration</h4>
               <ul>
                   <li>Utilized a combination of established and emerging technologies.</li>
                   <li>Adapted to diverse project requirements and technological changes.</li>
@@ -109,15 +107,15 @@
    
   
         </div>
-        <div id="noabout2" class="hiddenSection">
-          <h2>Architecture and Technologies</h2>
+        <div id="Technologies" class="hiddenSection">
+          <h2>Technical Summary</h2>
 
           <div class="section">
               <p>The project involved a variety of tools and methodologies, encompassing backend development, frontend design, real-time communication, and secure server management within cloud technologies.</p>
             </div>
       
           <div class="section">
-              <h3>Backend Development</h3>
+              <h4>Backend Development</h4>
               <ul>
                 <li><strong>Developed using Java with Spring Boot,</strong> focusing on clean code practices and efficient resource management.</li>
                 <li><strong>Integrated Spring Security and JWT</strong> for robust authentication and stateless authorization.</li>
@@ -126,7 +124,7 @@
                 <li><strong>Managed database interactions via Spring Data JPA</strong> for flexible data persistence.</li>
               </ul>
 
-              <h3>Server and Security</h3>
+              <h4>Server and Security</h4>
               <ul>
                 <li><strong>Configured an Ubuntu 20 server within Oracle Cloud</strong> for its stability and community support, ensuring a robust server environment.</li>
                 <li><strong>Implemented HTTPS using Let's Encrypt</strong> for encrypted data transmission and increased trustworthiness.</li>
@@ -136,7 +134,7 @@
             </ul>
             
 
-              <h3>Frontend Development</h3>
+              <h4>Frontend Development</h4>
               <ul>
                 <li><strong>React Architecture:</strong> Developed a dynamic UI using React. Utilized component lifecycle methods and hooks for stateful logic and effects.</li>
                 <li><strong>Redux for State Management:</strong> Managed global application state with Redux, incorporating actions and reducers for predictable state transitions.</li>
@@ -152,6 +150,44 @@
               <h2>Conclusion and Future Directions</h2>
               <p>KosherChat exemplifies a harmonious balance between functionality, security, and performance. Future enhancements include integrating more advanced messaging features, scaling through cloud technologies, and implementing machine learning for user behavior analysis and chat moderation. This project highlights my technical competencies in both frontend and backend development, underscoring my commitment to creating secure, efficient, and user-centric software solutions.</p>
           </div>
+        
+        
+        
+        </div>
+
+        <div id="instruction" class="instruction hiddenSection">
+          <h2>Architecture and Technologies</h2>
+
+          <div class="section">
+              <p>The project involved a variety of tools and methodologies, encompassing backend development, frontend design, real-time communication, and secure server management within cloud technologies.</p>
+            </div>
+      
+          <div class="section steps">
+            <div class="instruct-step">
+              <img src="images/app/instruction/addNewContact/1_main_menu_icon.jpg" alt="step 1">
+              <p>first do that</p> <div class="ic menuIcon"></div>
+            </div>
+            <div class="instruct-step">
+              <img src="images/app/instruction/addNewContact/2_add_new_icon.jpg" alt="step 2">
+              <p>first do that</p>
+            </div>
+            <div class="instruct-step">
+              <img src="images/app/instruction/addNewContact/3_fill_form.jpg" alt="step 3">
+              <p>first do that</p>
+            </div>
+            <div class="instruct-step">
+              <img src="images/app/instruction/addNewContact/4_wait_for_contact_to_accept.jpg" alt="step 4">
+              <p>first do that</p>
+            </div>
+          </div>
+
+          <div class="section">
+              <h2>Conclusion and Future Directions</h2>
+              <p>KosherChat exemplifies a harmonious balance between functionality, security, and performance. Future enhancements include integrating more advanced messaging features, scaling through cloud technologies, and implementing machine learning for user behavior analysis and chat moderation.</p>
+          </div>
+        
+        
+        
         </div>
       </div>
       </div>
@@ -159,3 +195,6 @@
 </body>
 
 </html>
+
+
+<!-- <img src="images/app/instruction/addNewContact/1 main menu icon copy.jpg" alt="step 1" width="500" height="600"> -->

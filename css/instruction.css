@@ -1,0 +1,36 @@
+.instruction steps  {
+
+}
+
+
+.instruct-step {
+display:flex;
+margin-bottom: 30px;
+position: relative;
+}
+
+.instruct-step img{
+    margin-right: 20px;
+    width: 50%;
+}
+
+
+.instruct-step p{
+    width: 50%;
+
+}
+
+.ic {
+    background-size: 20px 20px;
+    border: none;
+    margin: 0px;
+    background-position: center center;
+    transition: ease 0.2s all;
+    position: absolute;
+    left: 30%;
+    margin-top: 5px;
+}
+
+.menuIcon{
+    background: url("../images/app/icons/menu.svg")  no-repeat;
+}

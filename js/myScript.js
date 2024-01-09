@@ -4,10 +4,13 @@
             event.preventDefault();
             const allSections = document.querySelectorAll('.right-pane > div');
             allSections.forEach(section => {
+                console.log("add to hiddenSection ",section )
                 section.classList.add('hiddenSection');
             });
 
             const targetId = event.currentTarget.getAttribute('href').substring(1);
+            console.log("remove hiddenSection from  ",targetId )
+
             const targetElement = document.getElementById(targetId);
             targetElement.classList.remove('hiddenSection');
         }
