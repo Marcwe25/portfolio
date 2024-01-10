@@ -149,6 +149,10 @@ h3 {
 
 }
 
+.nav .appLocation{
+    line-height: 1;
+}
+
 .iconFormating {
     background-size: 20px 20px;
     border: none;
@@ -198,7 +202,7 @@ h3 {
         display: block;    }
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 601px) {
     .hiddenSection {
         display: none !important;
     }
