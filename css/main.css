@@ -209,7 +209,7 @@ h3 {
     
     .left-pane-container {
         position:fixed;
-        transform: translateY(-16%);
+        transform: translateY(-21%);
         left: 55px;
         margin-top: 65px;
     }
