@@ -2,6 +2,7 @@
     position: relative;
     width: 230px;
     height: 230px;
+    margin-bottom: 15%;
 }
 
 .logo-text {
@@ -52,7 +53,6 @@
     font-size: 21px;
     letter-spacing: 5px;
     text-shadow: 0 0 2px #fff, 0 0 4px rgba(255, 255, 255, 0.3), 0 0 5px rgba(255, 255, 255, 0.3);
-
 }
 
 .logo-container p.logo-details {

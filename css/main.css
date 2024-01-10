@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
-
-
+@font-face {
+    font-family: IBM Plex Sans;
+    src: url(../font/IBMPlexSans-Regular.ttf);
+   }
+@font-face {
+    font-family: Pixelify Sans;
+    src: url(../font/PixelifySans-Regular.ttf);
+   }
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url(../font/LaBelleAurore-Regular.ttf);
+   }
 body {
     background-color: #8d8787 !important;
     font-size: 15px;
@@ -45,6 +52,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15%;
 }
 
 .nav a {
@@ -111,8 +119,12 @@ about-section a {
 
 h3, h2,h4,h5,h1 {
     margin-bottom: 5px;
+    letter-spacing: 0.2em;
 }
 
+ul {
+    padding-inline-start: 20px;
+}
 
 .right-pane-container ul {
     margin-top: 0px;
@@ -159,6 +171,7 @@ h3 {
 @media only screen and (max-width: 600px) {
     .right-pane-container {
         margin-left: 0px;
+        margin-right: 0px;
     }
 
     .left-pane-container {
