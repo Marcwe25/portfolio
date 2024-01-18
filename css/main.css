@@ -52,24 +52,47 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-bottom: 15%;
 }
 
 .nav a {
+    text-decoration: none;
+    line-height: 6vh;
+
+}
+
+.nav p {
+    margin-block: 0.5em;
     color: #464343 !important;
     font-family: 'Pixelify Sans', sans-serif;
-    text-decoration: none;
     font-size: 12px;
     letter-spacing: 2.55px;
     font-size: 15px !important;
-    line-height: 3;
+}
+
+.h6 {
+    margin-block: 1.5em;
+}
+
+.h6 div{
+    margin-block: 0.5em;
+}
+
+.h6 div:not(.border) p{
+    margin-block: 0 !important;
+    line-height: 0.9;
+    letter-spacing: 0.5px;
+}
+
+.nav .border {
+    width: 130px;
 }
 
 .border {
     border: #737171;
     border-style: solid;
     border-width: thin;
-    text-align: center;
     padding-inline: 15px;
 }
 
@@ -78,24 +101,9 @@ body {
     line-height: 0;
 }
 
-about-section a {
-
-}
-
 .app-intro{
     position:relative;
 }
-
-/* .app-intro:before{
-    width: 230px;
-    content: "my last app";
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    font-weight: normal;
-    color: #ffe700;
-    mix-blend-mode: overlay;
-} */
 
 .left-pane-container {
     display: flex;
@@ -103,7 +111,7 @@ about-section a {
     justify-content: center;
     align-items: center;
     height: 100vh;
-
+    padding: 30px;
 }
 
 .right-pane-container {
@@ -141,27 +149,8 @@ h3 {
     color: #e9e4e4 !important;
 }
 
-.app-overview {
-
-}
-
-.app-intro {
-
-}
-
 .nav .appLocation{
     line-height: 1;
-}
-
-.iconFormating {
-    background-size: 20px 20px;
-    border: none;
-    margin: 0px;
-    background-position: center center;
-    transition: ease 0.2s all;
-    position: absolute;
-    left: 30%;
-    margin-top: 5px;
 }
 
 .menuIcon{
@@ -178,13 +167,11 @@ h3 {
         margin-right: 0px;
     }
 
-    .left-pane-container {
-
-    }
-
     .scrolable-p{
         overflow-y: auto;
         overflow-x: clip;
+        scroll-behavior: smooth;
+
       }
 
     .container {
@@ -193,6 +180,8 @@ h3 {
         right: 13px;
     }
 
+
+
     .backToTop {
         background: url("../images/app/icons/backToTop.svg")  no-repeat;
         margin-inline: auto;
@@ -200,7 +189,7 @@ h3 {
         width: 60px;
         height: 60px;
         display: block;    }
-  }
+    }
 
   @media only screen and (min-width: 601px) {
     .hiddenSection {
@@ -209,13 +198,13 @@ h3 {
     
     .left-pane-container {
         position:fixed;
-        transform: translateY(-21%);
-        left: 55px;
-        margin-top: 65px;
+        left: 31px;
     }
 
     .scrolable-d{
         overflow-y: auto;
         overflow-x: clip;
+        scroll-behavior: smooth;
+
       }
   }
