@@ -1,18 +1,20 @@
-
 @font-face {
     font-family: IBM Plex Sans;
     src: url(../font/IBMPlexSans-Regular.ttf);
-   }
+}
+
 @font-face {
     font-family: Pixelify Sans;
     src: url(../font/PixelifySans-Regular.ttf);
-   }
+}
+
 @font-face {
     font-family: 'La Belle Aurore';
     src: url(../font/LaBelleAurore-Regular.ttf);
-   }
+}
+
 body {
-    background-color: #8d8787 !important;
+    background-color: #2d2020 !important;
     font-size: 15px;
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -23,7 +25,7 @@ body {
     left: 15px;
     right: 15px;
     position: fixed;
-    border: #737171;
+    border: #939393;
     border-style: solid;
     border-width: medium;
 }
@@ -43,8 +45,8 @@ body {
 
 .color-set-2 {
     color: #646060 !important;
-    background-color: #d2d5d7 !important
-    ;}
+    background-color: #d2d5d7 !important;
+}
 
 
 .nav {
@@ -56,15 +58,18 @@ body {
     margin-bottom: 15%;
 }
 
-.nav a {
-    text-decoration: none;
-    line-height: 6vh;
-
+.border {
+    margin-block: 0.15em;
 }
 
+.border a {
+    line-height: 2.5em;
+}
+
+.nav span,
 .nav p {
-    margin-block: 0.5em;
-    color: #464343 !important;
+    margin-block: 2em;
+    color: #d2d5d7 !important;
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 12px;
     letter-spacing: 2.55px;
@@ -72,14 +77,18 @@ body {
 }
 
 .h6 {
-    margin-block: 1.5em;
+    margin-block: 1.3em;
 }
 
-.h6 div{
-    margin-block: 0.5em;
+.h6 p {
+    margin: 0;
 }
 
-.h6 div:not(.border) p{
+.h6 .h6 {}
+
+
+
+.h6 div:not(.border) p {
     margin-block: 0 !important;
     line-height: 0.9;
     letter-spacing: 0.5px;
@@ -94,6 +103,7 @@ body {
     border-style: solid;
     border-width: thin;
     padding-inline: 15px;
+    padding-block: 1em;
 }
 
 .last-project {
@@ -101,8 +111,8 @@ body {
     line-height: 0;
 }
 
-.app-intro{
-    position:relative;
+.app-intro {
+    position: relative;
 }
 
 .left-pane-container {
@@ -112,6 +122,12 @@ body {
     align-items: center;
     height: 100vh;
     padding: 30px;
+
+}
+
+.left-pane-container a {
+    text-decoration: none;
+
 }
 
 .right-pane-container {
@@ -125,7 +141,11 @@ body {
     overflow-y: scroll;
 }
 
-h3, h2,h4,h5,h1 {
+h3,
+h2,
+h4,
+h5,
+h1 {
     margin-bottom: 5px;
     letter-spacing: 0.2em;
 }
@@ -142,23 +162,25 @@ h3 {
     letter-spacing: 0.2em;
 }
 
-.right-pane-container p,li,a {
-    white-space: pre-line;
+.right-pane-container p,
+li,
+a {
+    /* white-space: pre-line; */
     line-height: 1.8;
     letter-spacing: 0.1em;
     color: #e9e4e4 !important;
 }
 
-.nav .appLocation{
+.nav .appLocation {
     line-height: 1;
 }
 
-.menuIcon{
-    background: url("../images/app/icons/menu.svg")  no-repeat;
+.menuIcon {
+    background: url("../images/app/icons/menu.svg") no-repeat;
 }
 
 .instruction {
-    display:none;
+    display: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -167,12 +189,12 @@ h3 {
         margin-right: 0px;
     }
 
-    .scrolable-p{
+    .scrolable-p {
         overflow-y: auto;
         overflow-x: clip;
         scroll-behavior: smooth;
 
-      }
+    }
 
     .container {
         flex-direction: column;
@@ -181,30 +203,31 @@ h3 {
     }
 
 
-
     .backToTop {
-        background: url("../images/app/icons/backToTop.svg")  no-repeat;
+        background: url("../images/app/icons/backToTop.svg") no-repeat;
         margin-inline: auto;
         margin-block: 35px;
         width: 60px;
         height: 60px;
-        display: block;    }
+        display: block;
     }
+}
 
-  @media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) {
     .hiddenSection {
         display: none !important;
     }
-    
-    .left-pane-container {
-        position:fixed;
-        left: 31px;
-    }
 
-    .scrolable-d{
+    .left-pane-container {
+        position: fixed;
+        left: 31px;
+        top: -5vh;
+        }
+
+    .scrolable-d {
         overflow-y: auto;
         overflow-x: clip;
         scroll-behavior: smooth;
 
-      }
-  }
+    }
+}
