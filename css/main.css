@@ -48,6 +48,24 @@ body {
     background-color: #d2d5d7 !important;
 }
 
+.color-set-3 {
+    color: #cd7a1b !important;
+
+}
+
+.nav-section {
+
+}
+
+.nav-section :before {
+    width: 230px;
+    content: "Marc Weiss";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    font-weight: normal;
+    color: #ffe700;
+}
 
 .nav {
     display: flex;
@@ -69,7 +87,7 @@ body {
 .nav span,
 .nav p {
     margin-block: 2em;
-    color: #d2d5d7 !important;
+    color: #d2d5d7;
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 12px;
     letter-spacing: 2.55px;
